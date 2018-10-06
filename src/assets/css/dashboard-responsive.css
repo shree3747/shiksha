@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 Jun, 2016, 12:52:33 PM
+    Author     : priyank
+*/
+
+/*	internet explorer spacific css */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #package_select_box{
+            width:288px;
+    }
+}
+/* 	it ends here	****************/
+.right-arrow {
+width: 0;
+height: 0;
+border-top: 15px solid transparent;
+border-bottom: 15px solid transparent;
+border-left: 13px solid #6896C5;
+}
+.right-position{
+position: absolute;
+top:0;
+right:-3%;
+}
+.left-arrow {
+width: 0;
+height: 0;
+border-top: 15px solid transparent;
+border-bottom: 15px solid transparent;
+border-right: 13px solid #6896C5;
+}
+.left-position{
+position: absolute;
+top:0;
+left:-3%;
+}
+@media (max-width:786px){
+/***************dashboard row*****************/
+.dashoardtopnav{
+    position: relative;
+}
+.dashoardtopnavmenu{
+    width: 94%;
+    float: none;
+    overflow-x: auto;
+    margin-left: 3%;
+    border-bottom: thin solid lightblue;
+}
+.dashoardtopnavmenu ul {
+    width: 240%;
+    float: none;
+}
+.dashoardtopnavmenu ul li a.span {
+    background: none !important;
+    color: #000 !important;
+}
+#dashboard_more_menu >ul{
+    position: absolute;
+}
+.brief-details{
+    height: auto;
+    overflow: hidden;
+}
+/***************user details**************/
+.brief-details .user-details{
+    width: 97%;
+}
+.brief-details .user-details div:first-child{
+        width: 40% !important;
+        max-width: 150px;
+}
+.brief-details .user-details .user-info{
+            width: 55%;
+}
+/***************cum-rank*****************/
+.brief-details .cum-rank,
+.brief-details .syllabus,
+.brief-details .learn-index{
+    width: 100%;
+}
+/***************dashboard row*****************/
+.dashboard-row{
+    overflow: hidden;
+}
+.dashboard-row .content-column{
+    width:100% !important;
+    margin-bottom:10px;
+}
+}
