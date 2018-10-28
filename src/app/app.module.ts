@@ -42,6 +42,8 @@ import { ForgotPasswordComponent } from './common/password/forgot-password/forgo
 import { QuizComponent } from './common/quiz/quiz.component';
 import { NavigationComponent } from './common/banner/navigation/navigation.component';
 import { DashboardComponent } from './common/dashboard/dashboard.component';
+import { DashboardSidebarComponent } from './common/dashboard-sidebar/dashboard-sidebar.component';
+import { DashboardHeaderComponent } from './common/dashboard-header/dashboard-header.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +77,9 @@ import { DashboardComponent } from './common/dashboard/dashboard.component';
     ForgotPasswordComponent,
     QuizComponent,
     NavigationComponent,
-    DashboardComponent
+    DashboardComponent,
+    DashboardSidebarComponent,
+    DashboardHeaderComponent
   ],
   imports: [
     BrowserModule,
