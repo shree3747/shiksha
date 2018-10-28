@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private httpService: HttpClient) { 
 
+  }
+
+  arrStud:  string [];
   ngOnInit() {
+    this.httpService.get('src/assets/stud.json').subscribe(
+      data => {
+        this.arrStud = data as string [];	 // FILL THE ARRAY WITH DATA.
+         console.log(this.arrStud);
+      },
+      (err: HttpErrorResponse) => {
+        console.log (err.message);
+      }
+    );
   }
 
 }
