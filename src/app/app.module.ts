@@ -44,6 +44,9 @@ import { NavigationComponent } from './common/banner/navigation/navigation.compo
 import { DashboardComponent } from './common/dashboard/dashboard.component';
 import { DashboardSidebarComponent } from './common/dashboard-sidebar/dashboard-sidebar.component';
 import { DashboardHeaderComponent } from './common/dashboard-header/dashboard-header.component';
+import { DashboardOverviewComponent } from './common/dashboard-overview/dashboard-overview.component';
+import { DashboardReportsComponent } from './common/dashboard-reports/dashboard-reports.component';
+import { DashboardExamsComponent } from './common/dashboard-exams/dashboard-exams.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +82,10 @@ import { DashboardHeaderComponent } from './common/dashboard-header/dashboard-he
     NavigationComponent,
     DashboardComponent,
     DashboardSidebarComponent,
-    DashboardHeaderComponent
+    DashboardHeaderComponent,
+    DashboardOverviewComponent,
+    DashboardReportsComponent,
+    DashboardExamsComponent
   ],
   imports: [
     BrowserModule,
