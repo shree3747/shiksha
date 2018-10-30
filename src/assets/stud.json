@@ -1,0 +1,18 @@
+[{
+    "Name": "abc",
+    "Class": "X",
+    "Test": "SemI",
+    "Marks": "80%"
+},
+{
+    "Name": "pqr",
+    "Class": "X",
+    "Test": "SemI",
+    "Marks": "80%"
+},
+{
+    "Name": "xyz",
+    "Class": "X",
+    "Test": "SemII",
+    "Marks": "85%"
+}]

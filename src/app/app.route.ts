@@ -15,6 +15,10 @@ import { VideoAndeventsComponent } from './common/video-andevents/video-andevent
 import { WhatWeDoComponent } from './common/what-we-do/what-we-do.component';
 import { QuizComponent } from './common/quiz/quiz.component';
 import { DashboardComponent } from './common/dashboard/dashboard.component';
+import { DashboardOverviewComponent } from './common/dashboard-overview/dashboard-overview.component';
+import { DashboardReportsComponent } from './common/dashboard-reports/dashboard-reports.component';
+import { DashboardExamsComponent } from './common/dashboard-exams/dashboard-exams.component';
+
 const appRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'login', component: LoginComponent },
@@ -32,7 +36,22 @@ const appRoutes: Routes = [
     { path: 'video', component: VideoAndeventsComponent },
     { path: 'whatwedo', component: WhatWeDoComponent },
     { path: 'quiz', component: QuizComponent },
-    { path: 'dashboard', component: DashboardComponent },
+    { path: 'dashboard', component: DashboardComponent ,
+      children: [
+        {
+          path: 'overview',
+          component: DashboardOverviewComponent
+        },
+        {
+          path: 'reports',
+          component: DashboardReportsComponent
+        },
+        {
+          path: 'exams',
+          component: DashboardExamsComponent
+        }
+      ]
+    },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];
